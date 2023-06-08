@@ -57,3 +57,11 @@ color: #000;
 background-color: #e6e6e6;
 transition: all 0.2s;
 }
+
+#open-modal {
+    position: sticky;
+    height: 100%;
+    /* width: 100vw; */
+    color: white;
+    object-fit: cover;
+}
