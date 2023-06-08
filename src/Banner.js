@@ -30,15 +30,18 @@ function Banner() {
     return string?.length > n ? string.substr(0, n - 1) + "..." : string;
   }
 
+  const image = `https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`
+
   return (
-    <header
+     <header
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage:  `url ("https://api.themoviedb.org/3/movie/top_rated?api_key=7138600d099a7db59080cee1110875fb&language=en-US/${movie?.backdrop_path}")`        ,
+        backgroundImage: `url(${image})`,
         backgroundPosition: "center center",
       }}
     >
+      {console.log(movie.backdrop_path)}
       <div className="banner_contents">
         <h1 className="banner_title">
           {movie?.title || movie?.name || movie?.original_name}
