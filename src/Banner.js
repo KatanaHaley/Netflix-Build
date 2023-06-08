@@ -9,7 +9,6 @@ import { FullScreen, useFullScreenHandle } from "react-full-screen";
 function Banner() {
   const [movie, setMovie] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState('');
-  const [toggle, setToggle] = useState(true)
   const handle = useFullScreenHandle();
 
 
