@@ -24,7 +24,7 @@ function Banner() {
     fetchData();
   }, []);
 
-  console.log(movie);
+  // console.log(movie);
 
   function truncate(string, n) {
     return string?.length > n ? string.substr(0, n - 1) + "..." : string;
@@ -41,7 +41,7 @@ function Banner() {
         backgroundPosition: "center center",
       }}
     >
-      {console.log(movie.backdrop_path)}
+      {/* {console.log(movie.backdrop_path)} */}
       <div className="banner_contents">
         <h1 className="banner_title">
           {movie?.title || movie?.name || movie?.original_name}
